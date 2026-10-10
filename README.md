@@ -1,5 +1,7 @@
 # URL Shortener
 
+[![Tests](https://github.com/Hayrapetyan-AM/laravel-url-shortener/actions/workflows/tests.yml/badge.svg)](https://github.com/Hayrapetyan-AM/laravel-url-shortener/actions/workflows/tests.yml)
+
 Laravel application for creating short links, tracking visits, and managing links in a personal dashboard powered by Filament.
 
 ## Requirements
