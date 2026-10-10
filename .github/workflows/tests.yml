@@ -16,7 +16,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['8.2', '8.3']
+        # PHP 8.2 is deliberately excluded: openspout/openspout (pulled in by
+        # Filament) requires ~8.3.0 || ~8.4.0 || ~8.5.0, so `composer install`
+        # cannot resolve on 8.2 even though composer.json declares ^8.2.
+        php: ['8.3', '8.4']
 
     steps:
       - name: Checkout
